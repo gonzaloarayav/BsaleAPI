@@ -20,8 +20,8 @@ app.set('port', port);
 app.use(express.json());
 
 // Routes
-let routes = require('./src/routes/products')
-app.use('/', routes);
+let routes = require('src/routes/products')
+app.use('./', routes);
 
 app.listen(port, () =>{
     console.log('Server on port 5000')
