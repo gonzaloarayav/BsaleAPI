@@ -3,19 +3,6 @@ const router = express.Router(); //Enroutado para conexion a la bd
 
 const mysqlConnection = require('./database'); //Conexion a la bd
 
-//Se crea la ruta get la cual recibira parametros "product_name" y "category" y category para filtrar
-router.get('/product/f/:product_name&:category', (req, res) => {
-    const { product_name, category } = req.params;
-
-    mysqlConnection.query(`SELECT * FROM product WHERE name LIKE ? AND category LIKE ?`, [`%${product_name}%`, Number(category)], (err, rows, field) => {
-        if (!err) {
-            res.json(rows);
-        } else {
-            console.log(err);
-        }
-    });
-
-});
 
 //Se crea la ruta get la cual recibira parametro "product_name" para filtrar
 router.get('/product/p/:product_name', (req, res) => {
