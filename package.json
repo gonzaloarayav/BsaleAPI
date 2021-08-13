@@ -2,7 +2,7 @@
   "name": "rest-api-bsale",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
@@ -14,8 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "dev": "node src/index.js"
+    "start": "node ./index.js",
+    "dev": "node ./index.js"
   },
   "author": "",
   "license": "ISC"
