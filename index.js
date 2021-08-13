@@ -20,7 +20,7 @@ app.set('port', port);
 app.use(express.json());
 
 // Routes
-app.use(require('./src/routes/products'));
+app.use(require('./products'));
 
 app.listen(port, () =>{
     console.log('Server on port 5000')
