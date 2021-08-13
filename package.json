@@ -8,7 +8,6 @@
     "nodemon": "^2.0.12",
     "mysql": "^2.18.1"
   },
-
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
