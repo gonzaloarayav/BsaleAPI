@@ -18,7 +18,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.json());
 
 // Routes
-app.use(require('./src/routes/products'));
+app.use(require('./products'));
 
 
 app.listen(3000, () =>{
