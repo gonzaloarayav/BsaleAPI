@@ -11,8 +11,10 @@ app.use((req, res, next) => {
     next();
 });
 
+let port = process.env.PORT || 5000;
+
 // Settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', port);
 
 // Middlewares
 app.use(express.json());
@@ -21,7 +23,7 @@ app.use(express.json());
 app.use(require('./products'));
 
 
-app.listen(3000, '0.0.0.0',() =>{
+app.listen(port, () =>{
     console.log('Server on port 5000')
 });
 

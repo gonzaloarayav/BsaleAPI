@@ -52,7 +52,7 @@ router.get('/product/', (req, res) => {
     });
 });
 
-router.get('/category', (req, res) => {
+router.get('/category/', (req, res) => {
     mysqlConnection.query('SELECT * FROM category', (err, rows, field) => {
         if (!err) {
             res.json(rows);
