@@ -14,8 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js",
-    "dev": "node ./src/index.js"
+    "start": "node app/src/index.js",
+    "dev": "node app/src/index.js"
   },
   "author": "",
   "license": "ISC"
